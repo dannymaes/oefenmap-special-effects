@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio </title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div id="particles-js"></div>
+  <div class="toggle">
+    <span>Stop</span>
+    <span>Start</span>
+  </div>
+  <div class="back-to-top">
+    <a href="#top" id="top-link">Top</a>
+  </div>
+  <div class="content">
+    <div class="content-text" id="top">
+      <h1>Danny maes</h1>
+      <p>Junior Web developer</p>
+    </div>
+    <div class="articles">
+      <ul>
+        <li>
+          <div class="info">
+            <a href="#info">
+              Info
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="projecten">
+            <a href="#projecten">
+              Projecten
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="contact">
+            <a href="#contact">
+              Contact
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="info">
+      <img src="images/danny.jpg" alt="my picture">
+      <p>
+        Hoi, ik ben Danny maes, wonende in heppen-leopoldsburg.<br>
+        Opleiding webdeveloper gevolgd @ <a href="https://www.becode.org/register/register_nl.html"
+          target=_blank>BeCode</a>.<br>
+        Na slechts een paar maanden ervaring in deze wereld kan je hier toch al paar kleine projectjes bekijken.<br>
+        Er zullen in de toekomst nog meer en grotere projecten volgen.
+      </p>
+
+    </div>
+    <div id="projecten">
+      <h3>Projecten</h3>
+      <ul>
+        <li>
+          <div class="project1">
+            <a href="https://dannymaes.github.io/Snake/snake.html" target=_blank><img src="images/snake-game.png"
+                alt="image-snake-game"></a>
+          </div>
+          <h4>Snake game</h4>
+        </li>
+        <li>
+          <div class="project2">
+            <a href="https://dannymaes.github.io/Register-Form/form.html" target=_blank><img
+                src="images/register-form.png" alt="image-register-form"></a>
+          </div>
+          <h4>Register form</h4>
+        </li>
+        <li>
+          <div class="project3">
+            <a href="#"><img src="images/construction.png" alt="image-under-construction"></a>
+          </div>
+          <h4>Under construction</h4>
+        </li>
+      </ul>
+    </div>
+    <div id="contact">
+      <ul>
+        <li>
+          <i class="fa fa-mobile" aria-hidden="true">&nbsp;&nbsp;&nbsp; 0498 13 10 03</i>
+        </li>
+        <li>
+          <i class="fa fa-envelope-o" aria-hidden="true">&nbsp;&nbsp;&nbsp; <a
+              href="mailto:den.danny.maes@gmail.com">E-mail</a></i>
+        </li>
+        <li>
+          <i class="fa fa-linkedin-square" aria-hidden="true">&nbsp;&nbsp;&nbsp;<a
+              href="https://www.linkedin.com/in/danny-maes-914ba276/" target=_blank>LinkedIn</a></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="javascript/particles.js"></script>
+  <script src="javascript/app.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.toggle').click(function () {
+        $('.toggle').toggleClass('active')
+        $('#particles-js').toggleClass('active')
+      })
+    })
+  </script>
+</body>
+
+</html>
